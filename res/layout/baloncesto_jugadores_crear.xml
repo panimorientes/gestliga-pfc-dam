@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:background="@color/blanco"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/edtBCNombreJugador"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:text="@string/nombreDelJugador"/>
+    
+    <EditText 
+        android:id="@+id/edtBCApodoJugador"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="textCapCharacters"
+        android:textSize="20sp"
+        android:text="@string/apodo"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:text="@string/fechaNacimiento"/>
+        
+        <TextView 
+            android:id="@+id/txtBCFechaNacJugadorSeleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"/>
+        
+        <ImageButton 
+            android:id="@+id/btnBCFechaNacJugador"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:padding="3dip"
+            android:src="@drawable/icono_calendario_32"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:textSize="22sp"
+            android:text="@string/posicion"
+            android:gravity="center"/>
+        
+        <Spinner 
+            android:id="@+id/spnBCPosicionJugador"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:textSize="22sp"
+            android:text="@string/equipo"
+            android:gravity="center"/>
+        
+        <Spinner 
+            android:id="@+id/spnBCEquipoJugador"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"/>
+    </LinearLayout>
+
+</LinearLayout>

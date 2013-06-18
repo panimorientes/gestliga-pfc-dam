@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_padel"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spnMenuPadel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtOrdenar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ordenarPor"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spnOrdenarPor_Padel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/txtOrdenar" />
+
+            <Button
+                android:id="@+id/btnCrearPadel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/fondo_botones"
+                android:drawableLeft="@drawable/img_crear"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:text="@string/crear"
+                android:textColor="@color/blanco"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondear_esquinas"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:id="@+id/tablaTorneosPadel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dip"
+                            android:gravity="center" >
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.26"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nombre"
+                                    android:textColor="@color/negro"
+                                    android:textSize="25sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.08"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_menu_cc_36" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.18"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/fechaInicio"
+                                    android:textColor="@color/negro"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.18"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/fechaFin"
+                                    android:textColor="@color/negro"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.22"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/opciones"
+                                    android:textColor="@color/negro"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/tablaJugadoresPadel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone" >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dip"
+                            android:gravity="center" >
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.44"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nombre"
+                                    android:textColor="@color/negro"
+                                    android:textSize="25sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.26"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/apodo"
+                                    android:textColor="@color/negro"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/edad"
+                                    android:textColor="@color/negro"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.20"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/opciones"
+                                    android:textColor="@color/negro"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/redondear_esquinas"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableLayout
+                            android:id="@+id/tablaTorneosContentPadel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/redondear_esquinas"
+                            android:visibility="gone" />
+
+                        <TableLayout
+                            android:id="@+id/tablaJugadoresContentPadel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/redondear_esquinas"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

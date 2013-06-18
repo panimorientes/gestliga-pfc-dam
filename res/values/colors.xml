@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo_pantalla">#D9D9D9</color>
+    <color name="fondo_cabecera">#262626</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="fondo_botones">#02AEDF</color>
+    <color name="fondo_botones_pressed">#6ADEFF</color>
+    <color name="fondo_boton_pressed">#FF7200</color>
+    <color name="rojo">#FF0000</color>
+    <color name="azul">#086A87</color>
+</resources>

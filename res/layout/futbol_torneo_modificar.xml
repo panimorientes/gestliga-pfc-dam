@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:background="@color/blanco"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:text="@string/nombreDelTorneo" />
+        
+        <EditText
+            android:id="@+id/edtModTorneoNombre"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:text="@string/lugarDelTorneo" />
+        
+        <EditText
+            android:id="@+id/edtModTorneoLugar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:text="@string/fechaInicioConPuntos" />
+        
+        <TextView
+            android:id="@+id/txtModTorneoFechaI"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+        
+        <ImageButton 
+            android:id="@+id/btnModFutbolFechaInicio"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:padding="3dip"
+            android:src="@drawable/icono_calendario_32"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:text="@string/fechaFinConPuntos" />
+        
+        <TextView
+            android:id="@+id/txtModTorneoFechaF"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+        
+        <ImageButton 
+            android:id="@+id/btnModFutbolFechaFin"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:padding="3dip"
+            android:src="@drawable/icono_calendario_32"/>
+    </LinearLayout>
+</LinearLayout>

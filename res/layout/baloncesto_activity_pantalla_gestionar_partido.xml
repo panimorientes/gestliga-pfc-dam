@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".PantallaGestionarPartidoBaloncesto" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.05"
+        android:background="@drawable/fondo_cabeceras"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tituloResumenPartido"
+            android:textColor="@color/negro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="10dip"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="40dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtPartidoEquipoLocalBC"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.30"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edtPartidoEquipoLocalResBC"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/edtPartidoEquipoVisitResBC"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/txtPartidoEquipoVisitBC"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.3"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:text="@string/fechaPartidoConPuntos"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtFechaPartidoBC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/azul"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/btnSeleccionarFechaPartidoBC"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="3dip"
+                android:src="@drawable/icono_calendario_32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:gravity="left|center_vertical"
+                android:text="@string/horaPartidoConPuntos"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spnHoraPartidoBC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:entries="@array/horas" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnGuardar_Click"
+            android:text="@string/guardarCambios"
+            android:textColor="@color/negro"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/mvp"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/spnMVPLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip" />
+            
+            <Spinner
+                android:id="@+id/spnMVPVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtEquipoLocalResumenBC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.32"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/jugador"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/mj"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/pts"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/reb"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/tap"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/fal"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llResumenBCLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/txtEquipoVisitResumenBC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dip"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.32"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/jugador"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/mj"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/pts"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/reb"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.12"
+                            android:gravity="center"
+                            android:text="@string/tap"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/fal"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llResumenBCVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

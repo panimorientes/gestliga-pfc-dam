@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:background="@color/blanco"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/edtBMNombreEquipo"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:text="@string/nombreEquipoPuntos"/>
+    
+    <EditText 
+        android:id="@+id/edtBMCiudadEquipo"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="textCapCharacters"
+        android:textSize="20sp"
+        android:text="@string/ciudadPuntos"/>
+    
+    <EditText 
+        android:id="@+id/edtBMEstadioEquipo"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:text="@string/estadioPuntos"/>
+    
+    <EditText 
+        android:id="@+id/edtBMFechaFundacionEquipo"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/fechaFundacionPuntos"/>
+    
+    <EditText 
+        android:id="@+id/edtBMNumSociosEquipo"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/numSociosPuntos"/>
+
+</LinearLayout>

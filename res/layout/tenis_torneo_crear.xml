@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:background="@color/blanco"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/edtTenisNombreTorneo"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:text="@string/nombreTorneo"/>
+    
+    <EditText 
+        android:id="@+id/edtTenisLugarTorneo"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:inputType="textCapCharacters"
+        android:textSize="20sp"
+        android:text="@string/lugarTorneo"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/txtTenisFechaInicioTorneo"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:text="@string/fechaInicioLinea"/>
+        
+        <ImageButton 
+            android:id="@+id/btnTenisFechaInicio"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dip"
+            android:src="@drawable/icono_calendario_32"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/txtTenisFechaFinTorneo"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:text="@string/fechaFinLinea"/>
+        
+        <ImageButton 
+            android:id="@+id/btnTenisFechaFin"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dip"
+            android:src="@drawable/icono_calendario_32"/>
+    </LinearLayout>
+
+</LinearLayout>
