@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".PantallaGestionarPartido" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.05"
+        android:background="@drawable/fondo_cabeceras"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tituloResumenPartido"
+            android:textColor="@color/negro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.95"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="40dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtPartidoEquipoLocal"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edtPartidoEquipoLocalRes"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/edtPartidoEquipoVisitRes"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/txtPartidoEquipoVisit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/negro"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/guardarCambios"
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:onClick="btnGuardar_Click" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.5" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llFutbolMinutosLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dip"
+                            android:drawableLeft="@drawable/img_minutos"
+                            android:gravity="center"
+                            android:text="@string/minutosJugados"
+                            android:textColor="@color/negro"
+                            android:textSize="24sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFutbolGolesLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dip"
+                            android:drawableLeft="@drawable/img_pelota"
+                            android:gravity="center"
+                            android:text="@string/goles"
+                            android:textColor="@color/negro"
+                            android:textSize="24sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFutbolTarjetasLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginBottom="10dip"
+                            android:layout_gravity="left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:drawableLeft="@drawable/img_tarjetas"
+                                android:gravity="center"
+                                android:text="@string/tarjetas"
+                                android:textColor="@color/negro"
+                                android:textSize="24sp"
+                                android:textStyle="italic" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/img_mas_gris"
+                                android:onClick="btnGenerarTarjetasLocal_Click" />
+                            
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/img_borrar_gris"
+                                android:onClick="btnBorrarTarjetasLocal_Click" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/negro" />
+
+            <ScrollView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.5" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llFutbolMinutosVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dip"
+                            android:drawableLeft="@drawable/img_minutos"
+                            android:gravity="center"
+                            android:text="@string/minutosJugados"
+                            android:textColor="@color/negro"
+                            android:textSize="24sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/llFutbolGolesVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dip"
+                        android:layout_gravity="left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dip"
+                            android:drawableLeft="@drawable/img_pelota"
+                            android:gravity="center"
+                            android:text="@string/goles"
+                            android:textColor="@color/negro"
+                            android:textSize="24sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFutbolTarjetasVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginBottom="10dip"
+                            android:layout_gravity="left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:drawableLeft="@drawable/img_tarjetas"
+                                android:gravity="center"
+                                android:text="@string/tarjetas"
+                                android:textColor="@color/negro"
+                                android:textSize="24sp"
+                                android:textStyle="italic" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/img_mas_gris" 
+                                android:onClick="btnGenerarTarjetasVisit_Click"/>
+                            
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="20dip"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/img_borrar_gris"
+                                android:onClick="btnBorrarTarjetasVisit_Click" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaBienvenida"
+    android:orientation="vertical"
+    android:background="@color/fondo_pantalla" >
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo_pantalla_bienvenida"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center">
+            
+            <FrameLayout 
+                android:id="@+id/llImagen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip">
+                
+                <ImageView 
+                    android:id="@+id/img1Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/futbol_50_off"/>
+                
+                <ImageView 
+                    android:id="@+id/img1On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/futbol_50_on"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:id="@+id/llImagen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/llImagen1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+                
+                <ImageView 
+                    android:id="@+id/img2Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tenis_50_off"/>
+                
+                <ImageView 
+                    android:id="@+id/img2On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tenis_50_on"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:id="@+id/llImagen3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/llImagen2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+                
+                <ImageView 
+                    android:id="@+id/img3Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baloncesto_50_off"/>
+                
+                <ImageView 
+                    android:id="@+id/img3On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baloncesto_50_on"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:id="@+id/llImagen4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/llImagen3"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+                
+                <ImageView 
+                    android:id="@+id/img4Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tenis_50_off"/>
+                
+                <ImageView 
+                    android:id="@+id/img4On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tenis_50_on"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:id="@+id/llImagen5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/llImagen4"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+                
+                <ImageView 
+                    android:id="@+id/img5Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/balonmano_50_off"/>
+                
+                <ImageView 
+                    android:id="@+id/img5On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/balonmano_50_on"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:gravity="center"
+        android:layout_marginRight="2dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtEquipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:gravity="left"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtProgresion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:textSize="22sp" />
+    </LinearLayout>
+</TableRow>

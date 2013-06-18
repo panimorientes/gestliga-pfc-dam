@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:orientation="horizontal" >
+    
+	<Spinner 
+	    android:id="@+id/spnGol"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.5"/>
+	
+	<RadioGroup 
+	    android:id="@+id/rdGroupFutbolTarjetas"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:orientation="vertical">
+	    
+	    <RadioButton 
+	        android:id="@+id/rbA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/negro"
+	        android:textSize="14sp"
+	        android:text="A"
+	        android:checked="true"/>
+	    
+	    <RadioButton
+	        android:id="@+id/rbR" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/negro"
+	        android:textSize="14sp"
+	        android:text="R"/>
+	</RadioGroup>
+	
+	<Spinner 
+	    android:id="@+id/spnMinuto"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.3"
+	    android:textSize="14sp"
+	    android:layout_marginLeft="3dip"/>
+</LinearLayout>

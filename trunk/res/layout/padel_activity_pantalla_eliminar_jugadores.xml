@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:orientation="vertical"
+    tools:context=".PantallaEliminarJugadores" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/fondo_cabeceras_controles"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/blanco"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="@string/eliminarJugadores" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:orientation="vertical">
+        
+        <Button 
+            android:id="@+id/btnEliminarGestionTorneoEliminarJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="20sp"
+            android:text="@string/eliminarJugadores"/>
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <LinearLayout 
+                android:id="@+id/llPadelGestionTorneoJugadoresEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

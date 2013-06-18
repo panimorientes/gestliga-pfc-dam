@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gestliga"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono_aplicacion"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.example.gestliga.PantallaBienvenida"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.gestliga.PantallaInicial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gestliga.PantallaGestionPrincipal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="futbol.PantallaGestionTorneo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="futbol.PantallaAnadirEquipo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="futbol.PantallaEliminarEquipos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="futbol.PantallaGestionarPartido"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="tenis.PantallaGestionTorneoTenis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="tenis.PantallaAnadirJugador"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="tenis.PantallaEliminarJugadores"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="tenis.PantallaGestionPartidoTenis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="baloncesto.PantallaGestionTorneoBaloncesto"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="baloncesto.PantallaAnadirEquipoBaloncesto"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="baloncesto.PantallaEliminarEquiposBaloncesto"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="baloncesto.PantallaGestionarPartidoBaloncesto"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="padel.PantallaAnadirJugador"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="padel.PantallaEliminarJugadores"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="padel.PantallaGestionPartidoPadel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="padel.PantallaGestionTorneoPadel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="balonmano.PantallaAnadirEquipoBalonmano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="balonmano.PantallaEliminarEquiposBalonmano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="balonmano.PantallaGestionarPartidoBalonmano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="balonmano.PantallaGestionTorneoBalonmano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.gestliga.PantallaEstadisticasPrincipal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+    </application>
+
+</manifest>

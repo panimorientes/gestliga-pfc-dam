@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dip"
+    android:orientation="horizontal" >
+    
+	<Spinner 
+	    android:id="@+id/spnJugador"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.32"/>
+	
+	<EditText 
+	    android:id="@+id/edtMJ"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.12"
+	    android:textAlignment="center"
+	    android:textSize="20sp"
+	    android:inputType="number" />
+	
+	<EditText 
+	    android:id="@+id/edtPts"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.12"
+	    android:textAlignment="center"
+	    android:textSize="20sp"
+	    android:inputType="number" />
+	
+	<EditText 
+	    android:id="@+id/edtReb"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.12"
+	    android:textAlignment="center"
+	    android:textSize="20sp"
+	    android:inputType="number" />
+	
+	<EditText 
+	    android:id="@+id/edtTap"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.12"
+	    android:textAlignment="center"
+	    android:textSize="20sp"
+	    android:inputType="number" />
+	
+	<Spinner 
+	    android:id="@+id/spnFal"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:layout_marginLeft="3dip"
+	    android:entries="@array/faltas"/>
+</LinearLayout>
